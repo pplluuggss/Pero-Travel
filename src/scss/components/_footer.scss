@@ -1,0 +1,148 @@
+footer {
+  width: auto;
+  height: auto;
+
+  .footer_content {
+    padding: 45px 77px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 624px) {
+      padding: 45px 40px;
+    }
+
+    @media (max-width: 380px) {
+      padding: 45px 10px;
+    }
+
+    @media (max-width: 886px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .img {
+    }
+
+    .navs {
+      a {
+        display: flex;
+        flex-direction: column;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #282828;
+        margin: 8px 0px;
+        text-decoration: none;
+        transition: 0.5s ease all;
+      }
+
+      a:hover {
+        color: $yellow;
+        transition: 0.5s ease all;
+      }
+
+      @media (max-width: 886px) {
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+      }
+    }
+
+    .contact_footer {
+      display: flex;
+      flex-direction: column;
+      a {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #282828;
+        text-decoration: none;
+        margin: 8px 0px;
+        transition: 0.5s ease all;
+      }
+
+      a:hover {
+        color: $yellow;
+        transition: 0.5s ease all;
+      }
+
+      @media (max-width: 886px) {
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+      }
+    }
+
+    .social_footer {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 886px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+      }
+
+      .mail {
+        span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #282828;
+          transition: 0.5s ease all;
+          cursor: pointer;
+        }
+
+        span:hover {
+          color: $yellow;
+          transition: 0.5s ease all;
+        }
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 17px;
+
+        i {
+          margin-right: 10px;
+        }
+
+        #vk {
+          font-size: 20px;
+          color: #bc0000;
+        }
+
+        #ins {
+          font-size: 20px;
+          color: #e59b06;
+        }
+
+        #fb {
+          font-size: 20px;
+          color: #17c1bc;
+        }
+      }
+    }
+  }
+}
